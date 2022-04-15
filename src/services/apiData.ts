@@ -1,6 +1,6 @@
 import axios from "axios"
 
 export const apiData = axios.create({
-    baseURL: ""
+    baseURL: "https://meliuz-server-rn.herokuapp.com/"
 })
 

@@ -1,4 +1,4 @@
-export interface IBlockchainData {
+export interface IBlockChainData {
     data: {
         items: IBlockchainData[]
     }
