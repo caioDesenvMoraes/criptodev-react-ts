@@ -1,11 +1,8 @@
 import React from "react"
+import Router from "./routes"
 
 const App: React.FC = () => {
-  return(
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+  return <Router/>
 }
 
 export default App
