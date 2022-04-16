@@ -1,10 +1,40 @@
 .container {
-    max-width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    height: 70vh;
+    background-color: #888;
+    border-bottom: 2px solid #00f;
 }
 
-.storeLists {
+.container h1 {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+    border: 3px solid #00f;
+    background-color: #ddd;
+}
+
+.card h2 {
+    text-align: center;
+    color: #00f;
+    border-bottom: 3px solid #00f;
+}
+
+.card img {
+    width: 140px;
 }

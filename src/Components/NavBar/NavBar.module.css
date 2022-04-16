@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    height: 6rem;
+    border-bottom: 2px solid #00f;
+}
+
+.logo {
+    width: 90px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #00f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 600ms;
+}
+
+.item:hover {
+    background-color: #ccc;
+    color: #00f;
+}

@@ -30,20 +30,22 @@ const Home: React.FC = () => {
                         </div>
                     </>
                 ) : (
-                    <>
+                    <div className={ styles.cards }>
                         {data.map( (el, index) => (
                             <div className={ styles.storeLists }>
-                                <div key={ index }>
+                                <div key={ index } className={ styles.card }>
                                     <h2>{ el.label }</h2>
                                     <img src={ el.logo } alt={ el.label } width={ 300 } height={ "auto" }/>
-                                    <p>{ el.address.street }</p>
-                                    <p>{ el.address.city }</p>
-                                    <p>{ el.address.state }</p>
+                                    <div className={ styles.address }>
+                                        <p>{ el.address.street }</p>
+                                        <p>{ el.address.city }</p>
+                                        <p>{ el.address.state }</p>
+                                    </div>
                                 </div>
                             </div>
                         ))}
 
-                    </>
+                    </div>
                 )}
             </div>
             <Footer/>
